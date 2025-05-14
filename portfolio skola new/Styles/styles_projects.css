@@ -1,0 +1,34 @@
+.content{
+    flex-direction: row;
+   
+}
+.content-text{
+    color: #daf1da;
+    padding: right 20%;
+
+    
+}
+.content-container{
+    padding-right: 35%;
+    padding-top: -100px;
+    margin: 100px 0 0 100px;
+    width: 75%;
+    height: 400px;
+    display: flex; 
+    gap: 20px;
+   
+}
+.content-container img{
+width: 90%;
+height: 80%;
+object-fit: cover;
+border-radius: 10px;
+border: 3px solid #daf1da;
+transition: all ease-in-out;
+transition: transform 5s;
+
+}
+
+.content-container img:hover{
+    width: 90%;
+}
