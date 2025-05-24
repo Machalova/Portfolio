@@ -1,0 +1,288 @@
+.body{
+    background-color: #daf1de;
+    height: 600vh;
+}
+
+
+.navbar{
+    position: fixed;
+    right: 7%;
+    top: 0%;
+    
+    padding: 12px 14px;
+    display: flex;
+    
+    align-items: center;
+    z-index: 100;
+    
+    overflow: hidden;
+    float: right;
+    
+}
+.Logo{
+    color: #ffffff;
+    font-family: Bagel;
+}
+
+a{
+    text-decoration: none;
+    color: #0B2B26;
+    font-family: InriaLight;
+}
+
+.navbar ul {  
+    display: flex;
+   
+}
+
+
+.navbar ul li{
+    position: relative;
+    list-style:none ;
+    margin-right: 35px;
+
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.navbar li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color:#daf1de ;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+
+}
+.navbar ul li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.Click{
+    padding: 20px 10px;
+    border-radius: 30px;
+    background:rgba(224, 184, 51, 1);
+    color: #051f20;
+    font-family: Inria;
+    width: 80px;
+    height: 2px;
+
+    position: fixed;
+    right: 4%;
+    top: 18px;
+    
+    display: flex;
+    align-items: center;
+    z-index: 100;   
+    overflow: hidden;
+    float: right;  
+}
+
+
+
+
+.sidebar{
+ background-color: #0d2e29;
+  color: white;
+  width: 200px;
+  height: 150vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.icon {
+  font-size: 25px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer; 
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+}
+
+.line {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+
+
+
+
+.title{
+    position: absolute;
+    top: 100px;
+    left: 375px;
+    font-family: Bagel;
+    color: #0B2B26;
+    font-size: 120px;
+}
+
+
+
+
+
+ .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 200px;
+      margin-top: 350px;
+      margin-left: 385px;
+      margin-bottom: 120px;
+    }
+
+    .project {
+      display: flex;
+      align-items: flex-start;
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+
+    .image-placeholder {
+      width: 350px;
+      height: 250px;
+      background-color: #ccc;
+      flex-shrink: 0;
+    }
+
+    
+
+    .project-info h1 {
+      font-family: Bagel;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-info p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .live-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #e7e4e4;
+      padding: 8px 16px;
+      border: none;
+      text-decoration: none;
+      color: #000000;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+
+  
+
+
+
+
+@media (max-width: 768px) {
+.navbar ul li a{
+    font-size: 15px;
+    font-weight: 250;
+
+}
+  .sidebar {
+    width: 60px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .Logo{
+    color: transparent;
+  }
+
+  .Click{
+     width: 45px;
+  }
+
+  .title{
+    font-size:50px;
+    left: 70px;
+    margin-top: 20px;
+  }
+
+   .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: -250px;
+        margin-right: px;
+        margin-top: -150px;
+      }
+
+      .image-placeholder {
+        width: 100%;
+        height: 200px;
+      }
+
+      .image-placeholder1 {
+       padding-bottom: 50px;
+       padding-right: 90px;
+        width: 50%;
+        height: 100px;
+        
+
+      }
+
+      .project-info {
+        width: 100%;
+}
+}
+
+
+@font-face {
+    font-family:Bagel;
+    src: url(/Styles/asets/BagelFatOne-Regular.ttf);
+}
+
+
+@font-face {
+    font-family:InriaBold;
+    src: url(/Styles/asets/InriaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family:InriaRegular;
+    src: url(/Styles/asets/InriaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:InriaLight;
+    src: url(/Styles/asets/InriaSans-Light.ttf);
+}
+
+@font-face {
+    font-family:Inria;
+    src: url(/Styles/asets/InriaSans-Italic.ttf);
+}
